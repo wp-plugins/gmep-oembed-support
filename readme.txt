@@ -3,9 +3,9 @@ Contributors: ruxton
 Tags: gmep, medical, medical education
 Requires at least: 3.4.0
 Tested up to: 3.4.1
-Stable tag: 0.4
+Stable tag: 0.5
 
-Adds support for http://gmep.imeducate.com/ to the internal oEmbed parser
+Adds support for http(s)://gmep.imeducate.com/ to the internal oEmbed parser
 
 == Description ==
 
