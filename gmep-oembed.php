@@ -5,7 +5,7 @@ Plugin URI:     http://gmep.imeducate.com/contact
 Description:    Adds support for http://gmep.imeducate.com/ to the internal oEmbed parser
 Author:         The Frontier Group
 Author URI:     http://www.thefrontiergroup.com.au/
-Version:        0.5
+Version:        0.7
 */
 
 /*  Copyright 2012  The Frontier Group  (email : info@thefrontiergroup.com.au)
@@ -29,6 +29,10 @@ Version:        0.5
 function gmep_add_oembed_support() {
   wp_oembed_add_provider('http://gmep.imeducate.com/*', 'http://gmep.imeducate.com/oembed');
   wp_oembed_add_provider('https://gmep.imeducate.com/*', 'https://gmep.imeducate.com/oembed');
+  wp_oembed_add_provider('http://gmep.org/*', 'http://gmep.org/oembed');
+  wp_oembed_add_provider('https://gmep.org/*', 'https://gmep.org/oembed');
+  wp_oembed_add_provider('http://www.gmep.org/*', 'http://www.gmep.org/oembed');
+  wp_oembed_add_provider('https://www.gmep.org/*', 'https://ww.gmep.org/oembed');
 }
 add_filter('init', 'gmep_add_oembed_support');
 
